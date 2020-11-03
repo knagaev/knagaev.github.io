@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Accidents on the Road - Choropleth</title>
+  <title>Заявки Covid</title>
   <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="https://d3js.org/queue.v1.min.js"></script>
   <script type="text/javascript" src="https://d3js.org/topojson.v0.min.js"></script>
@@ -76,7 +76,7 @@ div.tooltip {
   //Reading map file and data
 
   queue()
-  .defer(d3.json, "/topo.json")
+  .defer(d3.json, "/russia_1e-7sr.json")
   .defer(d3.csv, "covid.csv")
   .await(ready);
 
