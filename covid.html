@@ -48,12 +48,12 @@ div.tooltip {
 
   // Setting color domains(intervals of values) for our map
 
-  var color_domain = [1, 3, 10, 50, 150]
-  var ext_color_domain = [0, 1, 3, 10, 50, 150]
-  var legend_labels = ["<1", "1+", "3+", "10+", "50+", ">150"]              
+  var color_domain = [1, 3, 10, 50, 100]
+  var ext_color_domain = [0, 1, 3, 10, 50, 100]
+  var legend_labels = ["<1", "1+", "3+", "10+", "50+", ">100"]              
   var color = d3.scale.threshold()
   .domain(color_domain)
-  .range(["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#f03b20", "#bd0026"]);
+  .range(["#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#b10026"]);
 
   var div = d3.select("body").append("div")   
   .attr("class", "tooltip")               
