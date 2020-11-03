@@ -88,7 +88,7 @@ div.tooltip {
 
    data.forEach(function(d) {
     rateById[d.RegionCode] = +d.Quantity;
-    nameById[d.RegionCode] = d.Quantity;
+    nameById[d.RegionCode] = d.RegionName;
   });
 
   //Drawing Choropleth
