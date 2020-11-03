@@ -77,7 +77,7 @@ div.tooltip {
 
   queue()
   .defer(d3.json, "/russia_1e-7sr.json")
-  .defer(d3.csv, "covid.csv")
+  .defer(d3.csv, "covid_orig.csv")
   .await(ready);
 
   //Start of Choropleth drawing
