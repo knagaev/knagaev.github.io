@@ -1,0 +1,94 @@
+Rtype;RegionCode;RegionName;Quantity
+fregion;RU-ALT;Алтайский край;3
+fregion;RU-AMU;Амурская область;1
+fregion;RU-ARK;Архангельская область;1
+fregion;RU-AST;Астраханская область;1
+fregion;RU-BEL;Белгородская область;1
+fregion;RU-BRY;Брянская область;0
+fregion;RU-VLA;Владимирская область;0
+fregion;RU-VGG;Волгоградская область;24
+fregion;RU-VLG;Вологодская область;1
+fregion;RU-VOR;Воронежская область;9
+fdistrict;Far_Eastern;Дальневосточный округ;0
+fregion;RU-YEV;Еврейская автономная область;0
+fregion;RU-ZAB;Забайкальский край;0
+fregion;RU-IVA;Ивановская область;1
+fregion;RU-IRK;Иркутская область;0
+fregion;RU-KB;Кабардино-Балкарская Республика;0
+fregion;RU-KGD;Калининградская область;0
+fregion;RU-KLU;Калужская область;2
+fregion;RU-KAM;Камчатский край;0
+fregion;RU-KC;Карачаево-Черкесская Республика;0
+fregion;RU-KEM;Кемеровская область;2
+fregion;RU-KIR;Кировская область;0
+fregion;RU-KOS;Костромская область;7
+fregion;RU-KDA;Краснодарский край;7
+fregion;RU-KYA;Красноярский край;0
+fregion;RU-KGN;Курганская область;0
+fregion;RU-KRS;Курская область;0
+fregion;RU-LEN;Ленинградская область;0
+fregion;RU-LIP;Липецкая область;0
+fregion;RU-MAG;Магаданская область;0
+fregion;RU-MOW;Москва;0
+fregion;RU-MOS;Московская область;117
+fregion;RU-MUR;Мурманская область;0
+fregion;RU-NEN;Ненецкий авт.округ;0
+fregion;RU-NIZ;Нижегородская область;4
+fregion;RU-NGR;Новгородская область;1
+fregion;RU-NVS;Новосибирская область;15
+fregion;RU-OMS;Омская область;1
+fregion;RU-ORE;Оренбургская область;1
+fregion;RU-ORL;Орловская область;0
+fregion;RU-PNZ;Пензенская область;3
+fregion;RU-PER;Пермский край;3
+fdistrict;Volga;Приволжский округ;0
+fregion;RU-PRI;Приморский край;0
+fregion;RU-PSK;Псковская область;0
+fregion;RU-AD;Республика Адыгея;0
+fregion;RU-AL;Республика Алтай;0
+fregion;RU-BA;Республика Башкортостан;0
+fregion;RU-BU;Республика Бурятия;0
+fregion;RU-DA;Республика Дагестан;1
+fregion;RU-IN;Республика Ингушетия;0
+fregion;RU-KL;Республика Калмыкия;0
+fregion;RU-KR;Республика Карелия;0
+fregion;RU-KO;Республика Коми;0
+fregion;RU-ME;Республика Марий Эл;1
+fregion;RU-MO;Республика Мордовия;5
+fregion;RU-SA;Республика Саха (Якутия);0
+fregion;RU-SE;Республика Северная Осетия;2
+fregion;RU-TA;Республика Татарстан;8
+fregion;RU-TY;Республика Тыва;0
+fregion;RU-KK;Республика Хакасия;0
+federation;Russian Federation;Российская Федерация;0
+fregion;RU-ROS;Ростовская область;9
+fregion;RU-RYA;Рязанская область;1
+fregion;RU-SAM;Самарская область;9
+fregion;RU-SPE;Санкт-Петербург;46
+fregion;RU-SAR;Саратовская область;6
+fregion;RU-SAK;Сахалинская область;0
+fregion;RU-SVE;Свердловская область;3
+fdistrict;Northwestern;Северо-Западный округ;0
+fdistrict;Northcaucasian;Северо-Кавказский округ;0
+fdistrict;Siberia;Сибирский округ;0
+fregion;RU-SMO;Смоленская область;0
+fregion;RU-STA;Ставропольский край;1
+fregion;RU-TAM;Тамбовская область;0
+fregion;RU-TVE;Тверская область;0
+fregion;RU-TOM;Томская область;9
+fregion;RU-TUL;Тульская область;1
+fregion;RU-TYU;Тюменская область;0
+fregion;RU-UD;Удмуртская Республика;2
+fregion;RU-ULY;Ульяновская область;2
+fdistrict;Urals;Уральский округ;0
+fregion;RU-KHA;Хабаровский край;1
+fregion;RU-KHM;Ханты-мансийский авт.округ;0
+fdistrict;Central;Центральный округ;0
+fregion;RU-CHE;Челябинская область;0
+fregion;RU-CE;Чеченская Республика;1
+fregion;RU-CE & RU-IN;Чеченская Республика и Республика Ингушетия;0
+fregion;RU-CU;Чувашская Республика;1
+fregion;RU-CHU;Чукотский авт.округ;0
+fdistrict;Southern;Южный округ;0
+fregion;RU-YAN;Ямало-ненецкий авт.округ;0
+fregion;RU-YAR;Ярославская область;2
