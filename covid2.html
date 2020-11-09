@@ -76,7 +76,7 @@ div.tooltip {
   //Reading map file and data
 
   queue()
-  .defer(d3.json, "/russia_1e-7sr.json")
+  .defer(d3.json, "/regions2010_sib_10.json")
   .defer(d3.csv, "covid_orig.csv")
   .await(ready);
 
