@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<style>
+    path {
+        stroke: white;
+        stroke-width: 1px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    div.title {
+        font: 14px sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div.map-box {
+        width: 862px;
+        height: 497px;
+    }
+
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        line-height: 25px;
+        width: 230px;
+        height: 25px;
+        padding: 2px;
+        font-size: 12px;
+        background: #FFFFE0;
+        border: 1px;
+        border-radius: 8px;
+        pointer-events: none;
+        overflow:hidden;
+        opacity: 0.85;
+    }
+    div.tooltip span {
+        display:none;
+    }
+    div.tooltip:hover span {
+        display:block;
+        position:fixed;
+        overflow:hidden;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заявки Covid</title>
+    <script type="text/javascript" src="raphael-min.js"></script>
+    <script type="text/javascript" src="russian-map.js"></script>
+    <script>
+
+        // запрос на получение json регионов
+        window.onload = function () {
+            fetch('./with-regions.json').then(function (response) {
+                response.json().then(function (data) {
+                    new RussianMap({
+                        viewPort: data.viewPort,
+                        region_values: data.region_values,
+                        mapId: 'russian-map',
+                        width: 862,
+                        height: 497,
+                        // дефолтовые атрибуты для контуров регионов
+                        defaultAttr: {
+                            fill: '#d8d8d8', // цвет которым закрашивать
+                            stroke: '#ffffff', // цвет границы
+                            'stroke-width': 1, // ширина границы
+                            'stroke-linejoin': 'round' // скруглять углы
+                        },
+                        mouseMoveAttr: {
+                            fill: '#25669e'
+                        },
+                        onMouseClick: function (event) {
+                            console.log(this.region.ident + ' ' + this.region.name +
+                                " " + this.region.attr.region_value);
+                        },
+
+                        onMouseMove: function (d) {
+
+                            var t = document.getElementById("output-label");
+                            //document.getElementById('popup').style.display = 'block';
+                            t.innerText = this.region.name + ": " + this.region.attr.region_value;
+                            t.style.top = (d.clientY + 10) + 'px';
+                            t.style.left = (d.clientX + 20) + 'px';
+                            t.style.display = "block";
+                        },
+                        onMouseOut: function (d) {
+                            var t = document.getElementById("output-label");
+                            t.innerHTML = '';
+                            t.style.display = "none";
+                        }
+                    }, data.regions);
+                });
+            });
+        };
+
+
+    </script>
+</head>
+
+<body>
+    <div id="map-box" class="map-box">
+        <div id="title" class="title">Заявки COVID</div>
+        <div id="russian-map"></div>
+        <div id="output-label" class="tooltip" style="display: none;"></div>
+    </div>
+</body>
+
+</html>
